@@ -21,6 +21,8 @@ namespace circuloMelhorado
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             var (resutado, icone) = circuloControle.CalculaCirculo(txtValor.Text);
+            MessageBox.Show($"{resutado}","RESULTADO:",MessageBoxButtons.OK,icone);
+            lblRestado.Text = resutado.ToString();
         }
     }
 }
