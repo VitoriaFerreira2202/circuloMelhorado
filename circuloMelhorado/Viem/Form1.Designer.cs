@@ -58,6 +58,7 @@
             this.btnCalcular.TabIndex = 2;
             this.btnCalcular.Text = "CALCULAR";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // lblRestado
             // 

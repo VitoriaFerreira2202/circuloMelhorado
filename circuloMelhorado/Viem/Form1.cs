@@ -1,4 +1,5 @@
-﻿using System;
+﻿using circuloMelhorado.Controle;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace circuloMelhorado
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            var (resutado, icone) = circuloControle.CalculaCirculo(txtValor.Text);
         }
     }
 }
